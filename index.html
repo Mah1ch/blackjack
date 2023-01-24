@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+    <div id="divReg">
+        <div class="container">
+            <h1 id="logo">Blackjack</h1>
+        </div>
+        <div class="centered">
+            <div class="card shadow">
+                <div class="inputbox">
+                    <h1 class="regg">Registration</h1>
+                </div>
+                <div class="inputbox">
+                    <input required="required" type="text" hover="hideText" id="inputUser">
+                    <span>Username</span>
+                    <i></i>
+                </div>
+                <div class="inputbox" style="margin-top: 50px;">
+                    <input required="required" type="number" id="inputCandies">
+                    <span>Сandies</span>
+                    <i></i>
+                </div>
+                <div style="margin-top: 25px;">
+                    <input type="checkbox" id="terms" name="interest" value="terms" />
+                    <label for="terms" id="label4Terms">Are u agree w our <a href="termsofservice.html" id="termsLink"> terms of service?</a></label>
+                </div>
+                <div class="divButton">
+                    <button id="regBtn" onclick="reg()">REGISTR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="divGame">
+        
+        <h3 id="message-el"></h3><br>
+        <h3>Your Candies: <span id="dep"></span></h3>
+        <h3>Your Dep: <span id="depForGame"></span></h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="infoText">
+                    <h3 id="cards"><b>Cards: </b></h3>
+                    <h3 id="sum"><b>Sum: </b></h3>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div id="infoText">
+                    <h3 id="dcards"><b>Cards: </b></h3>
+                    <h3><b>Sum: <span id="dsum"></span> </b></h3>
+                </div>
+            </div>
+        </div>
+        <div id="boldText">    
+            <button class="button" onclick="startGame()" id="start">LETS START GAME</button><br>
+            
+            <div class="inputbox" id="eblan">
+                <input required="required" type="number" id="depchik">
+                <span>Deposit</span>
+                <i></i>
+            </div>
+            <button class="button" onclick="depCheck()" id="eblan2">DEP</button><br>
+            <button class="button" onclick="newGamee()" id="newGame">NEW GAME</button><br>
+            <button class="button" onclick="newCard()" id="newCard">NEW CARD</button><br>
+            <button class="button" onclick="hold()" id="hold">HOLD</button><br><br>
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 id="player-name">Your Cards </h1>
+                <img src="" id="img0" width="100px">
+                <img src="" id="img1" width="100px">
+                <img src="" id="img2" width="100px">
+                <img src="" id="img3" width="100px">
+                <img src="" id="img4" width="100px">
+                <img src="" id="img5" width="100px">
+                <img src="" id="img6" width="100px">
+            </div>
+            <div class="col-sm-6">
+                <h1>Dealers Cards</h1>
+                <img src="" id="dimg1" width="100px">
+                <img src="" id="dimg0" width="100px">
+                <img src="" id="ddimg2" width="100px">
+                <img src="" id="ddimg3" width="100px">
+                <img src="" id="ddimg4" width="100px">
+                <img src="" id="ddimg5" width="100px">
+                <img src="" id="ddimg6" width="100px">
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+	
+    <script language="javascript" type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+body{
+    background-color: var(--green);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --green: #327932;
+    --yellow: goldenrod;
+    --white: #FEFEFE;
+    text-align: center;
+}
+#message-el{
+    
+    margin-top: -100px;
+    color: var(--white);
+}
+.container{
+    text-align: center;
+}
+h1{
+    color: var(--yellow);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    color: var(--white);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3{
+    color: var(--white);
+}
+span{
+    color: var(--yellow);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.button{
+    font-weight: bold;
+    background-color: var(--yellow);
+    color: #104c36;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.img-wrap {
+    position: relative;
+}
+.img-wrap img {
+    position: absolute;
+}
+.inputbox {
+    position: relative;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    color: var(--yellow);
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--yellow);
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 44px;
+}
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    margin: 0px auto;
+    display: table;
+}
+input, select, textarea{
+    color: rgb(15, 15, 15);
+}
+
+textarea:focus, input:focus {
+    color: rgb(15, 15, 15);
+}
+.card {
+    padding: 42px 30px 30px 30px;
+    width: auto;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+   
+.shadow {
+box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+                0 0  0 2px rgb(190, 190, 190),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+#logo{
+    color: var(--yellow);
+    padding-top: 75px;
+    position: relative;
+}   
+#regBtn {
+    width: 9em;
+    height: 3em;
+    font-size: 15px;
+    font-family: inherit;
+    border-radius: 50px;
+    border: solid;
+    border-color: var(--yellow);
+    position: relative;
+    overflow: hidden;
+    font-size: large;
+    color: var(--yellow);
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+}
+#regBtn:hover::before {
+    width: 9em;
+}
+#regBtn:focus{
+    border-color: var(--green);
+}
+.divButton{
+    margin-top: 40px;
+    text-align: center;
+}
+.regg{
+    position: relative;
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#divReg {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s, visibility 0s;
+}
+#divReg.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s 0.5s;
+}
+#divGame {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0s;
+}
+  
+#divGame.unhidden {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 1s 1.2s;
+}
+#divTerm{
+    left: 75px;
+}
+#termsLink{
+    color: var(--yellow);
+    font-weight: bolder;
+}
+#terms{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#label4Terms{
+    font-size: 16px;
+    margin-top: 8.5px;
+    display: inline-block;
+    vertical-align: middle;
+}
